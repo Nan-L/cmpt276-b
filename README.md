@@ -26,10 +26,8 @@ Things you may want to cover:
 =======
 Project Abstract
 
-Udio is a textbook trading platform designed specifically for University students, and will be tested with SFU students only on release. 
-Sellers will be able to list their used textbook on websites, specify their books,  and post pictures to show the quality of their books, 
-and ask for a price. Buyers will then be able to purchase the books from them through our website’s listing pages. Listings will be grouped 
-by book, and can be filtered by price and conditions. Listing pages will also have a chart of the high, low, and mean prices of past sales 
-for any given books, so the buyers and sellers will know the accepted prices of the books they are going to purchase/sell. Logins and profiles 
-will be created with Google and Facebook and other APIs, and transactions will be handled with paypal with buyers paying in advance.
+Udio is a textbook trading platform (website) designed for university students. Website releases will be tested by SFU students. 
+
+Sellers can list their used textbooks with pictures and selling price on the website. Buyers can purchase books through the website’s listing pages. Listing pages show books in groups which can be filtered by price and conditions. Each book has a historical price chart showing high, low, and mean prices. Users can create profiles and login with Google, Facebook, and other APIs. Transactions are handled with Paypal.
+
 >>>>>>> 7bea7777b738d8d7ee67c6cdec10d32fe72e1a49
