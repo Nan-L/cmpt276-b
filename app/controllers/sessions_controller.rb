@@ -3,6 +3,15 @@ class SessionsController < ApplicationController
   def new
   end
 
+  def index
+  end
+
+  def facebook
+    user = User.from_omniauth(request.env["omniauth.auth"])
+    session[:user_id] = user.id
+    redirect_to root_path
+
+  end 
 
   def create
     user = User.find_by(email: params[:session][:email].downcase)
@@ -18,5 +27,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+     session[:user_id] = nil
+     redirect_to root_path
   end
 end

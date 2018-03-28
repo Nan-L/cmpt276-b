@@ -1,0 +1,31 @@
+<p>
+  <strong>ID:</strong>
+  <%= @book.id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @book.year %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @book.price %>
+</p>
+
+<p>
+  <strong>Course_number:</strong>
+  <%= @book.course_number %>
+</p>
+
+<%= image_tag @book.image_url(:thumb) if @book.image? %>
