@@ -1,0 +1,52 @@
+<nav>
+	<div class="navbar">
+		
+		<div class="navStatic"id="logo"><%= link_to image_tag("notebook.png", :alt => "Udio logo", :id => "logo"), root_path %> </div>
+		
+		
+		<%= form_tag search_books_path do %>
+			<div class="navSatic" id="searchBar">
+					<input class="search" id="searchForm" name="query" placeholder="Search Books" type="text" autocomplete="off">
+					<button class="searchButton">Search</button>
+			</div>
+		<% end %>
+		
+		<%= link_to root_path do %>
+			<div class="navButton">Home</div>
+		<% end %>
+		
+
+		<% if !current_user %>
+			<%= link_to login_path do %>
+				<div class="navButton">Sell</div>
+			<% end %>
+		<% else %>
+			<%= link_to sell_path do %>
+				<div class="navButton">Sell</div>
+			<% end %>
+		<% end %>
+	
+		
+
+		<% if !current_user %>
+			<%= link_to login_path do %>
+				<div class="navButton">Log in</div>
+			<% end %>
+
+			<%= link_to signup_path do %>
+				<div class="navButton">Sign up</div>
+			<% end %>
+		<% else %>
+			<%= link_to signout_path do %>
+				<div class="navButton">Sign Out</div>
+			<% end %>
+			
+			<%= link_to profile_path(current_user.id) do %>
+					<div class="navButton"><strong><%= current_user.name %></strong></div>
+			<% end %>
+			
+		<% end %>
+		
+	</div>
+          
+</nav>

@@ -1,3 +1,4 @@
+<% provide(:title, "Listing") %>
 <p>
   <strong>Title:</strong>
   <%= @book.title %>
@@ -9,6 +10,30 @@
 </p>
 
 <p>
-  <strong>ID:</strong>
-  <%= @book.id %>
+  <strong>Author:</strong>
+  <%= @book.author %>
 </p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @book.price %>
+</p>
+
+<p>
+  <strong>Course_number:</strong>
+  <%= @book.course_number %>
+</p>
+
+<% if @book.user != nil %>
+  <p>
+    <strong>Seller: </strong>
+    <%= @book.user.name %>
+  </p>
+  <p>
+    <strong>Contact Seller by Email</strong>
+    <%= @book.user.email %>
+  </p>
+<% end %>
+
+
+<%= image_tag @book.image_url(:thumb) if @book.image? %>

@@ -4,18 +4,21 @@
 <h1 align="center">Sign up</h1>
 
 <div class="center">
-  <div id="signup_form">
+  <div class= "forms" id="signup_form">
     <%= form_for(@user) do |f| %>
       <%= f.label :name %>
       <%= f.text_field :name %>
 
       <%= f.label :email %>
-      <%= f.email_field :email %>
+      <%= f.email_field :email, class: 'form-control' %>
 
       <%= f.label :password %>
-      <%= f.password_field :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+
 
       <%= f.submit "Create my account", id: 'submit' %>
     <% end %>
+	<p><%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %></p>
   </div>
 </div>
