@@ -1,8 +1,9 @@
 @media (min-width: #{$desktop-width}) {
    .forms{
       
-      text-align:center;
       min-width:100%;
+      
+		border-collapse: collapse;
       
       input {
    	width: 50%;
@@ -14,8 +15,18 @@
    
       }
       
+      
+      th, td {
+          text-align: left;
+          padding: 8px;
+      }
+      
+      td > a{
+         text-decoration:none;
+      }
       #resultsHeader{
-         background-color:#96e9f7;
+         background-color: #4CAF50;
+          color: white;
       }
       
       #resultsBody{
@@ -30,5 +41,25 @@
       }
    
    }
+   
+   #results{
+		height:45px;
+		background:#f7f7f7;
+		border:none;
+		
+		
+		&:hover {background-color: #ddd;}
+		img{
+		   height:100%;
+		}
+	}
+	
+	#results:nth-child(odd){
+		background:#efefef;
+		&:hover {background-color: #ddd;}
+	}
+	
+	
+	
 
 }
