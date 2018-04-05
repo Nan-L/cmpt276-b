@@ -1,6 +1,34 @@
 <%= stylesheet_link_tag 'application' %>
 
 <% provide(:title, 'Sell') %>
+
+<script>
+  
+function check() {
+  var isbn = document.getElementById('book_isbn').value;;
+  const url1 = 'https://www.googleapis.com/books/v1/volumes?q=isbn:';
+  var url = url1+isbn;
+  fetch(url)
+  .then((resp) => resp.json())
+  .then(function(data) {
+    let books = data.items;
+    return books.map(function(book) {
+      document.getElementById('book_title').value=`${book.volumeInfo.title}`
+      document.getElementById('book_author').value=`${book.volumeInfo.authors}`
+      var s =`${book.volumeInfo.publishedDate}`
+      document.getElementById('book_year').value=s[0]+s[1]+s[2]+s[3];
+      document.getElementById("pic1").src=`${book.volumeInfo.imageLinks.thumbnail}`
+      
+    })
+  })
+  .catch(function(error) {
+    console.log(JSON.stringify(error));
+  });  
+       
+} 
+
+
+</script>
 <h1 align="center">Sell My Book</h1>
 
 <div class="center">
@@ -25,9 +53,14 @@
 
       <%= f.label :isbn %>
       <%= f.text_field :isbn %>
+      <button type="button" onClick="check();">AutoFill</button><BR><BR>
 
       <%= f.label :image %>
       <%= f.file_field :image %>
+      <BR>
+      <%= f.label :preview %><BR>
+      <img id="pic1">
+      <BR>
 
       <%= f.submit "Post my book", id: 'submit' %>
     <% end %>

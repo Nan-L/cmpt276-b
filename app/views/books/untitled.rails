@@ -5,10 +5,7 @@
 
       function initialize() {
         var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
-        var s1= "ISBN:";
-        var s2= <%= @book.isbn %>;
-        var s4 = s1+s2;
-        viewer.load(s4);
+        viewer.load('ISBN:0738531367');
       }
 
       google.books.setOnLoadCallback(initialize);
@@ -26,11 +23,6 @@
 <p>
   <strong>Author:</strong>
   <%= @book.author %>
-</p>
-
-<p>
-  <strong>ISBN:</strong>
-  <%= @book.isbn %>
 </p>
 
 <p>
@@ -58,20 +50,3 @@
 
 
 <%= image_tag @book.image_url(:thumb) if @book.image? %>
-<script type='text/javascript'>
-
-(function()
-{
-  if( window.localStorage )
-  {
-    if( !localStorage.getItem('firstLoad') )
-    {
-      localStorage['firstLoad'] = true;
-      window.location.reload();
-    }  
-    else
-      localStorage.removeItem('firstLoad');
-  }
-})();
-
-</script>
