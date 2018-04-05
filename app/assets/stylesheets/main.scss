@@ -11,6 +11,7 @@ $nav-height: 65px;
 @import 'nav.scss';
 @import 'footer.scss';
 @import 'forms.scss';
+@import 'render.scss';
 
 //phone
 @media (max-width: #{$tablet-width - 1px}){
@@ -258,6 +259,10 @@ $nav-height: 65px;
 		
 	#notice {
 	  color: green;
+	}
+	
+	#results{
+		height:45px;
 	}
 	
 	.field_with_errors {

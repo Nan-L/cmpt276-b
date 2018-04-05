@@ -1,0 +1,26 @@
+.line1{
+   height:50px;
+   text-align:center;
+}
+
+.renderBody{
+   margin-bottom:5%;
+   max-width:100%;
+}
+
+.booksRender{
+   display:grid;
+   grid-template-columns:repeat(4,1fr);
+   grid-gap:4em;
+   grid-auto-rows:minmax(100px,auto);
+}
+
+.booksPane{
+   max-width:100%;
+    
+    img {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+}
+}
