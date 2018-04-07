@@ -7,7 +7,7 @@ by book, and can be filtered by price and conditions. Listing pages will also ha
 for any given books, so the buyers and sellers will know the accepted prices of the books they are going to purchase/sell. Logins and profiles 
 will be created with Google and Facebook and other APIs, and transactions will be handled with paypal with buyers paying in advance.
 
-<strong> This project is in its final stage of development, for its purpose as a class project.<\strong> In order to view the app locally, please follow these instructions:
+<strong> This project is in its final stage of development, for its purpose as a class project.</strong> In order to view the app locally, please follow these instructions:
   
 Step 0: Initialize Git
 
