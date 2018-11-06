@@ -2,9 +2,9 @@
 
 Udio is a textbook trading platform designed specifically for University students, and is tested with SFU students on release version.
 
-Sellers can post their used textbook's information on websites, including pictures, quality (conditions) and price of the book.
+Sellers can post their used textbook's information on websites, including pictures, quality (conditions) and price of books.
 
-Buyers can purchase the books from sellers through website’s listing pages. All books are categorized in listing page, and can be filtered by price or conditions. Listing pages also have a chart of the high, low, and mean prices of past sales for any given books. 
+Buyers can purchase books from sellers through website’s listing pages. All books are categorized in listing page, and can be filtered by price or conditions. Listing pages also have a chart of the high, low, and mean prices of past sales for any given books. 
 
 Thus, the buyers and sellers will know the accepted prices of the books they are going to purchase/sell. 
 
