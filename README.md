@@ -6,7 +6,7 @@ Sellers can post their used textbook's information on websites, including pictur
 
 Buyers can purchase books from sellers through website’s listing pages. All books are categorized in listing page, and can be filtered by price or conditions. Listing pages also have a chart of the high, low, and mean prices of past sales for any given books. 
 
-Thus, the buyers and sellers will know the accepted prices of the books they are going to purchase/sell. 
+Thus, buyers and sellers will know the accepted prices of the books they are going to purchase/sell. 
 
 ## APIs
 
@@ -14,7 +14,7 @@ Logins and profiles of each user are created with Google, Facebook and other API
 
 ## Current status
 
-This project is in its final stage of development, for its purpose as a class project.
+This project is in final stage of development, for its purpose as a class project.
 
 ## How to run
 
@@ -32,7 +32,7 @@ Step 3: Install Bundler gem `gem install bundler`.
 Step 4: Install Rails framework (version 5.1 was used for this project)
 https://gorails.com/setup/ can be helpful here as well.
 
-Step 5: run terminal command `bundle install --without production` in the project root directory.
+Step 5: Run terminal command `bundle install --without production` in the project root directory.
 
 Step 6: Run Puma server (included with Ruby on Rails, via command `bin/rails server`) in the project root directory.
 
